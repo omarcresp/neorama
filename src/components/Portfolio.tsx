@@ -1,3 +1,4 @@
+import React from "react"
 import { useState } from 'react';
 
 export default function Portfolio() {
@@ -7,7 +8,6 @@ export default function Portfolio() {
     { id: 'all', name: 'Todos' },
     { id: 'empresas', name: 'Empresas' },
     { id: 'marcas', name: 'Marcas Personales' },
-    { id: 'entretenimiento', name: 'Entretenimiento' }
   ];
 
   const projects = [
@@ -22,7 +22,7 @@ export default function Portfolio() {
       title: 'Personal Branding'
     },
     {
-      category: 'entretenimiento',
+      category: 'marcas',
       image: 'https://images.unsplash.com/photo-1524985069026-dd778a71c7b4?q=80&w=800',
       title: 'Evento Musical'
     },
@@ -70,7 +70,6 @@ export default function Portfolio() {
               <div className="absolute inset-0 bg-gradient-to-t from-[#20094b] to-transparent opacity-0 group-hover:opacity-100 transition-opacity">
                 <div className="absolute bottom-0 left-0 right-0 p-6">
                   <h3 className="text-xl font-semibold text-white">{project.title}</h3>
-                  <p className="text-[#debb67]">Ver proyecto</p>
                 </div>
               </div>
             </div>

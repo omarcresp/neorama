@@ -1,4 +1,5 @@
-import { Menu } from 'lucide-react';
+// import { Menu } from 'lucide-react';
+import React from "react"
 import { useState } from 'react';
 
 export default function Navbar() {
@@ -18,9 +19,9 @@ export default function Navbar() {
               <a href="#portafolio" className="text-white hover:text-[#fa69ff] transition-colors">Portafolio</a>
               <a href="#blog" className="text-white hover:text-[#fa69ff] transition-colors">Blog</a>
               <a href="#sobre-nosotros" className="text-white hover:text-[#fa69ff] transition-colors">Sobre Nosotros</a>
-              <button className="bg-[#fa69ff] text-white px-4 py-2 rounded-lg hover:bg-[#d1e123] transition-colors">
+              <a href="#contacto" role="button" className="bg-[#fa69ff] text-white px-4 py-2 rounded-lg hover:bg-[#d1e123] transition-colors">
                 Contáctanos
-              </button>
+              </a>
             </div>
           </div>
           <div className="md:hidden">
@@ -28,7 +29,7 @@ export default function Navbar() {
               onClick={() => setIsOpen(!isOpen)}
               className="text-white hover:text-[#fa69ff]"
             >
-              <Menu />
+              {/** <Menu /> */}
             </button>
           </div>
         </div>
