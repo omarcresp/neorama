@@ -10,7 +10,7 @@ export default function Navbar() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
           <div className="flex items-center">
-            <div className="text-[#fa69ff] text-2xl font-bold">NEORAMA</div>
+            <img src="/images/header.PNG" className="h-52" alt="neorama logo" />
           </div>
           <div className="hidden md:block">
             <div className="ml-10 flex items-baseline space-x-8">
@@ -18,7 +18,7 @@ export default function Navbar() {
               <a href="#servicios" className="text-white hover:text-[#fa69ff] transition-colors">Servicios</a>
               <a href="#portafolio" className="text-white hover:text-[#fa69ff] transition-colors">Portafolio</a>
               <a href="#sobre-nosotros" className="text-white hover:text-[#fa69ff] transition-colors">Sobre Nosotros</a>
-              <a href="#contacto" role="button" className="bg-[#fa69ff] text-white px-4 py-2 rounded-lg hover:bg-[#d1e123] transition-colors">
+              <a href="https://wa.link/vvbiwq" target="_blank" role="button" className="bg-[#fa69ff] text-white px-4 py-2 rounded-lg hover:bg-[#d1e123] transition-colors">
                 Contáctanos
               </a>
             </div>
