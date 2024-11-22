@@ -4,7 +4,7 @@ import "./hero.css";
 
 export default function Hero() {
   return (
-    <div className="relative min-h-screen bg-[#20094b] flex items-center justify-center overflow-hidden">
+    <div id="inicio" className="relative min-h-screen bg-[#20094b] flex items-center justify-center overflow-hidden">
       <div className="hero-bg-image"></div>
 
       <div className="relative z-10 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto flex flex-col-reverse md:flex-row mt-8 h-screen items-center">

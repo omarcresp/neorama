@@ -17,7 +17,6 @@ export default function Navbar() {
               <a href="#inicio" className="text-white hover:text-[#fa69ff] transition-colors">Inicio</a>
               <a href="#servicios" className="text-white hover:text-[#fa69ff] transition-colors">Servicios</a>
               <a href="#portafolio" className="text-white hover:text-[#fa69ff] transition-colors">Portafolio</a>
-              <a href="#sobre-nosotros" className="text-white hover:text-[#fa69ff] transition-colors">Sobre Nosotros</a>
               <a href="https://wa.link/vvbiwq" target="_blank" role="button" className="bg-[#fa69ff] text-white px-4 py-2 rounded-lg hover:bg-[#d1e123] transition-colors">
                 Contáctanos
               </a>
@@ -39,7 +38,6 @@ export default function Navbar() {
             <a href="#inicio" className="block text-white hover:text-[#fa69ff] px-3 py-2">Inicio</a>
             <a href="#servicios" className="block text-white hover:text-[#fa69ff] px-3 py-2">Servicios</a>
             <a href="#portafolio" className="block text-white hover:text-[#fa69ff] px-3 py-2">Portafolio</a>
-            <a href="#sobre-nosotros" className="block text-white hover:text-[#fa69ff] px-3 py-2">Sobre Nosotros</a>
             <button className="w-full bg-[#fa69ff] text-white px-4 py-2 rounded-lg hover:bg-[#d1e123] transition-colors">
               Contáctanos
             </button>

@@ -37,7 +37,12 @@ export default function Portfolio() {
       image: '/images/portafolio4.jpeg',
       title: 'Sesión de fotos'
     },
-    // Add more projects as needed
+    {
+      category: 'rrss',
+      image: '/images/portafolio8.jpeg',
+      title: 'Videos',
+      url: 'https://vimeo.com/user231044429'
+    },
   ];
 
   const filteredProjects = activeCategory === 'all' 
@@ -72,6 +77,7 @@ export default function Portfolio() {
             <div
               key={index}
               className="group relative overflow-hidden rounded-lg cursor-pointer"
+              onClick={() => project.url && window.open(project.url, "_blank")}
             >
               <img
                 src={project.image}
