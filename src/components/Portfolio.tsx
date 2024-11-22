@@ -53,10 +53,10 @@ export default function Portfolio() {
     <section id="portafolio" className="py-20 bg-[#20094b]/90">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <h2 className="text-4xl font-bold text-center text-white mb-16">
-          Conoce Nuestro Trabajo
+          Conoce nuestro trabajo
         </h2>
 
-        <div className="flex justify-center space-x-4 mb-12">
+        <div className="flex md:justify-center space-x-4 mb-12 max-w-screen overflow-x-auto">
           {categories.map((category) => (
             <button
               key={category.id}
