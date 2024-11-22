@@ -6,7 +6,7 @@ export default {
       keyframes: {
         rotate180: {
           "0%": { transform: "rotate(0deg)" },
-          "100%": { transform: "rotate(180deg)" },
+          "100%": { transform: "rotate(359deg)" },
         },
       },
       colors: {
@@ -17,7 +17,7 @@ export default {
       },
       animation: {
         "spin-slow": "spin 20s linear infinite",
-        "rotate-180": "rotate180 24s linear infinite",
+        "rotate-180": "rotate180 32s linear infinite",
       },
     },
   },
