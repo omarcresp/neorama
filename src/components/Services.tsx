@@ -29,7 +29,7 @@ export default function Services() {
     <section id="servicios" className="py-20 bg-[#20094b]/95">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <h2 className="text-4xl font-bold text-center text-white mb-16">
-          ¿Porqué contratar o confiar en Neorama?
+          Servicios
         </h2>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           {services.map((service, index) => (
@@ -37,7 +37,6 @@ export default function Services() {
               key={index}
               className="bg-[#20094b] p-6 rounded-lg border border-[#fa69ff]/20 hover:border-[#fa69ff] transition-all transform hover:-translate-y-2"
             >
-              {/** <div className="mb-4">{service.icon}</div> */}
               <h3 className="text-xl font-semibold text-white mb-3">{service.title}</h3>
               <p className="text-gray-300">{service.description}</p>
             </div>

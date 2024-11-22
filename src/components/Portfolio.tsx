@@ -7,24 +7,35 @@ export default function Portfolio() {
   const categories = [
     { id: 'all', name: 'Todos' },
     { id: 'empresas', name: 'Empresas' },
+    { id: 'rrss', name: 'Entretenimiento / RRSS' },
     { id: 'marcas', name: 'Marcas Personales' },
   ];
 
   const projects = [
     {
       category: 'empresas',
-      image: 'https://images.unsplash.com/photo-1522542550221-31fd19575a2d?q=80&w=800',
-      title: 'Campaña Corporativa XYZ'
+      image: '/images/portafolio1.jpeg',
+      title: 'Diseño de post'
+    },
+    {
+      category: 'empresas',
+      image: '/images/portafolio2.jpeg',
+      title: 'Diseño de post'
+    },
+    {
+      category: 'empresas',
+      image: '/images/portafolio7.jpeg',
+      title: 'Foto corporativa'
+    },
+    {
+      category: 'rrss',
+      image: '/images/portafolio3.jpeg',
+      title: 'Diseño de post'
     },
     {
       category: 'marcas',
-      image: 'https://images.unsplash.com/photo-1492724441997-5dc865305da7?q=80&w=800',
-      title: 'Personal Branding'
-    },
-    {
-      category: 'marcas',
-      image: 'https://images.unsplash.com/photo-1524985069026-dd778a71c7b4?q=80&w=800',
-      title: 'Evento Musical'
+      image: '/images/portafolio4.jpeg',
+      title: 'Sesión de fotos'
     },
     // Add more projects as needed
   ];
@@ -65,7 +76,7 @@ export default function Portfolio() {
               <img
                 src={project.image}
                 alt={project.title}
-                className="w-full h-64 object-cover transform transition-transform group-hover:scale-110"
+                className="w-full aspect-square object-cover transform transition-transform group-hover:scale-110"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-[#20094b] to-transparent opacity-0 group-hover:opacity-100 transition-opacity">
                 <div className="absolute bottom-0 left-0 right-0 p-6">

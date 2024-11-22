@@ -1,21 +1,6 @@
 import React from "react";
-import { useState } from 'react';
 
 export default function ContactForm() {
-  const [formData, setFormData] = useState({
-    name: '',
-    company: '',
-    email: '',
-    phone: '',
-    message: ''
-  });
-
-  const handleSubmit = (e: React.FormEvent) => {
-    e.preventDefault();
-    // Handle form submission
-    console.log(formData);
-  };
-
   return (
     <section id="contacto" className="py-20 bg-[#20094b]">
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -23,27 +8,31 @@ export default function ContactForm() {
           Comencemos a Trabajar
         </h2>
         
-        <form onSubmit={handleSubmit} className="space-y-6">
+        <form action="https://formsubmit.co/agencianeorama@gmail.com" method="POST" className="space-y-6">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             <input
               type="text"
               placeholder="Nombre"
+              name="name"
               className="w-full px-4 py-3 bg-white/10 rounded-lg text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-[#fa69ff]"
               required
             />
             <input
               type="text"
+              name="company"
               placeholder="Empresa o marca"
               className="w-full px-4 py-3 bg-white/10 rounded-lg text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-[#fa69ff]"
             />
             <input
               type="email"
+              name="email"
               placeholder="Email"
               className="w-full px-4 py-3 bg-white/10 rounded-lg text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-[#fa69ff]"
               required
             />
             <input
               type="tel"
+              name="tel"
               placeholder="Número de teléfono"
               className="w-full px-4 py-3 bg-white/10 rounded-lg text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-[#fa69ff]"
             />
@@ -51,6 +40,7 @@ export default function ContactForm() {
           <textarea
             placeholder="¿Cómo podemos ayudarte?"
             rows={6}
+            name="text"
             className="w-full px-4 py-3 bg-white/10 rounded-lg text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-[#fa69ff]"
             required
           ></textarea>
